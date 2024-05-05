@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>responsive portfolio website design </title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+<body>
+<div class="hero-header">
+	<div class="wrapper">
+		<header>
+			<div class="logo">
+				<i class="fa-solid fa-a"></i>
+				<div class="logo-text"> prabhu maurya</div>	
+			</div>
+
+			<nav>
+				<div class="togglebtn">
+						<span></span>
+						<span></span>
+			           <span></span>
+               </div>
+		      <ul class="navlinks">
+		      	<li><a href="#"> home</a></li>
+		      	<li><a href="#"> protfolio</a></li>
+		      	<li><a href="#"> resume</a></li>
+		      	<li><a href="#"> blog</a></li>
+		      	<li><a href="#"> contact</a></li>
+		      </ul>
+          </nav>
+			
+		</header>
+		<div class="container">
+			<div class="hero-pic">
+			  <img src="image/main_photo.jpg" alt="profile pic">
+            </div>
+
+            <div class="hero-text">
+            <h5>Hi i'm <span class=" ">Backend Developer</span> </h5>
+            <h1>prabhu maurya</h1>
+
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry remaining essentially unchanged</p>
+
+            <div class="btn-group">
+            	<a href="#" class="btn active">download cv </a>
+            	<a href="#" class="btn">contact</a>
+           </div>
+
+           <div class="social">
+           	<a href="#"> <i class="fa-brands fa-facebook"></i></a>
+           	<a href="#"> <i class="fa-brands fa-instagram"></i></a>
+
+           	<a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+
+           	<a href="#"> <i class="fa-brands fa-threads"></i></a>
+           	
+           </div>	
+        </div>
+	</div>
+ </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+<script>
+	/** creating botton click show hide navbar **/
+var togglebtn=document.queryselector(".togglebtn");
+var nav=document.queryselector(".navlinks");	
+var link=document.queryselector(".navlinks li");
+
+togglebtn.addEventlistener("click",function() {
+	this.classlist.toggle("click");
+	nav.classlist.toggle("open")
+})	
+
+var typed=new typed(".input",{
+	strings:["Backend Developer","Web Developer","ux Designer"],
+	typedspeed:70,
+	Backspeed:55,
+	loop:true
+})
+
+
+</script>
+</body>
+</html>
